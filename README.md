@@ -9,8 +9,12 @@ A explicação dos desaftios Parte 1 – Matemática e Lógica estão em Draft.j
 
 2 - Ela chegou na hora
 
-3 - (d) Leve quatro e pague três"
+3 - (d) "Leve quatro e pague três"
 
 4 - 24
 
 ## Parte 2 – Programação
+
+Projeto feito usando .net 6.0
+
+1 - Rodar teste unitário do projeto PalindromaTeste
