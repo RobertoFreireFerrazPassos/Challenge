@@ -23,13 +23,19 @@ Projeto feito usando .net 6.0
 
 3 - A solução estará em Query.SQL
 
-Nota: O exercício está estranho. CODIGO_PEÇA 'MOTOR'? sendo o CODIGO_PEÇA o identificador do registro da tabela PEÇA, como pode ter diferentes peças com mesmo id 'MOTOR' com preços diferentes? O próprio exemplo dado não faz juz ao modelamento do esquema de banco de dados proposto
+```sql
+SELECT 
+	FORN.NOME_FORNECEDOR,
+	PECA.PRECO
+FROM FORNECEDOR AS FORN
+JOIN FORNECIMENTO ON FORNECIMENTO.CODIGO_FORNECEDOR = FORN.CODIGO_FORNECEDOR
+JOIN PECA ON PECA.CODIGO_PEÇA = FORNECIMENTO.CODIGO_PECA
+WHERE FORN.CIDADE = 'VITORIA' AND CODIGO_CARRO = 'KOMBI'
+```
 
+Nota: O exercício está estranho. CODIGO_PEÇA 'MOTOR'? sendo o CODIGO_PEÇA o identificador do registro da tabela PEÇA, como pode ter diferentes peças com mesmo id 'MOTOR' com preços diferentes? 
 
-FORNECEDOR          PREÇO
----------------- ---------
-Superpeças          1.000
-Peçauto             1.500
+Podemos ver o problema pelo exemplo dado na questão 3
 
 4 -
 
