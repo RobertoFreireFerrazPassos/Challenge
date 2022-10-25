@@ -21,16 +21,16 @@ Projeto feito usando .net 6.0
 
 2 -
 
-3 - A solução estará em Query.SQL
+3 - A solução estará em Query.SQL. Para recriar o banco no docker, usar Create_Db_Schema.sql e rodar comando docker compose up no arquivo docker-compose.yml
 
 ```sql
 SELECT 
 	FORN.NOME_FORNECEDOR,
 	PECA.PRECO
 FROM FORNECEDOR AS FORN
-JOIN FORNECIMENTO ON FORNECIMENTO.CODIGO_FORNECEDOR = FORN.CODIGO_FORNECEDOR
-JOIN PECA ON PECA.CODIGO_PEÇA = FORNECIMENTO.CODIGO_PECA
-WHERE FORN.CIDADE = 'VITORIA' AND CODIGO_CARRO = 'KOMBI'
+JOIN FORNECIMENTO ON FORNECIMENTO.CODIGO_FORNECEDOR = FORN.CODIGO_FORNECEDOR 
+JOIN PECA ON PECA.CODIGO_PEÇA = FORNECIMENTO.CODIGO_PECA AND PECA.CODIGO_PEÇA = 'MOTOR'
+WHERE FORN.CIDADE = 'VITORIA' AND FORNECIMENTO.CODIGO_CARRO = 'KOMBI'
 ```
 
 Nota: O exercício está estranho. CODIGO_PEÇA 'MOTOR'? sendo o CODIGO_PEÇA o identificador do registro da tabela PEÇA, como pode ter diferentes peças com mesmo id 'MOTOR' com preços diferentes? 
