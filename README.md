@@ -19,7 +19,7 @@ Projeto feito usando .net 6.0
 
 1 - Rodar teste unitário do projeto PalindromaTeste
 
-2 -
+2 - Rodar teste unitário do projeto BinarySearch
 
 3 - A solução estará em Query.SQL. Para recriar o banco no docker, usar Create_Db_Schema.sql e rodar comando docker compose up no arquivo docker-compose.yml
 
