@@ -37,6 +37,31 @@ Nota: O exercício está estranho. CODIGO_PEÇA 'MOTOR'? sendo o CODIGO_PEÇA o 
 
 Podemos ver o problema pelo exemplo dado na questão 3
 
-4 -
+4 - Rodar projeto console MS-Paint
 
+```
+Tela inicial
+. # # # . .
+. # . . # .
+. # # # . .
+. # . . . .
+
+Pixel(0, 1) e nova cor 'o'
+. o o o . .
+. o . . # .
+. o o o . .
+. o . . . .
+
+Pixel (1,3) e nova cor 'o'
+. # # # . .
+. # o o # .
+. # # # . .
+. # . . . .
+
+Pixel (1,3) e nova cor '#'
+. # # # . .
+. # # # # .
+. # # # . .
+. # . . . .
+```
 
